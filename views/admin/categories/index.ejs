@@ -23,12 +23,12 @@
                     <td><%= category.title %></td>
                     <td><%= category.slug %></td>
                     <td>
-                        <a href="">
-                            <button class="btn btn-primary">Editar</button>
-                        </a>
-                        <a href="">
+                        <button class="btn btn-primary">Editar</button>
+
+                        <form method="POST" action="/categories/delete" style="display: inline;">
+                            <input type="hidden" name="id" value="<%= category.id %>">
                             <button class="btn btn-danger">Apagar</button>
-                        </a>
+                        </form>
                     </td>
                 </tr>
             <%})%>
