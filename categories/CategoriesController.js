@@ -46,8 +46,8 @@ router.post("/categories/delete", (req, res) => {
         }else { // NÃO FOR NÚMERO
             res.redirect("/admin/categories")
         }
-    }else { // mull
-
+    }else { // null
+        res.redirect("/admin/categories")
     }
 })
 
