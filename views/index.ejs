@@ -1,8 +1,28 @@
 <%- include('partials/header.ejs') %>
-<%- include('partials/navbar') %>
+<%- include('partials/homenavbar.ejs') %>
 <body>
 
-   <h1>Página principal</h1> 
+   <div class="container">
+
+      <div class="text-center" id="home_title_box">
+         <h1 class="display-1">Bem-vindo</h1>
+         <hr>
+         <p>Este é um blog de assuntos relacionados a tecnologia, mantido e escrito por João Pedro Farias.</p>
+      </div>
+
+      <% articles.forEach(article => { %>
+
+         <h2 id="home_articles_titles"><%= article.title %></h2>
+         <a href="/<%= article.slug %>">
+            <button class="btn btn-success mt-2 mb-2">Ler artigo</button>
+         </a>   
+         <hr>
+     <%})%>
+
+
+
+
+   </div>
 
 
 

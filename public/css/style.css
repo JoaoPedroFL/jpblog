@@ -1,0 +1,17 @@
+body {
+    background-color: rgba(204, 204, 204, 0.40);
+}
+#home_title_box {
+    background-color: #CCC;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#home_articles_titles {
+    padding: 10px;
+    margin-top: 40px;
+    border: 2px solid rgba(73, 73, 179, 0.644);
+    box-shadow: 10px 10px rgba(73, 73, 179, 0.450);
+    border-radius: 5px;
+}
