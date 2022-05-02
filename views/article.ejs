@@ -1,17 +1,16 @@
 <%- include('partials/header.ejs') %>
 <%- include('partials/homenavbar.ejs') %>
+
 <body>
 
-   <div class="container-md">
-
-         <h2 id="home_articles_titles"><%= article.title %></h2>
-         <br>
-         <hr>
-         <p><%- article.body %></p>
-
-   </div>
+      <div class="container">
+            <h2 id="home_articles_titles"><%= article.title %></h2>
+            <br>
+            <hr>
+            <div class="ms-5 me-5"><%- article.body %></div>
+            
+      </div>
 
 </body>
 
 <%- include ('partials/footer.ejs') %>
-
