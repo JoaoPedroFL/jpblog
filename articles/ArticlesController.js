@@ -3,6 +3,7 @@ const router = express.Router()
 const Category = require("../categories/Category")
 const Article = require("./Article")
 const slugify = require("slugify")
+const { redirect } = require("express/lib/response")
 
 router.get("/admin/articles", (req, res) => {
     Article.findAll({
@@ -52,6 +53,26 @@ router.post("/articles/delete", (req, res) => {
     }else { // null
         res.redirect("/admin/articles")
     }
+})
+
+router.get("/admin/articles/edit/:id", (req, res) => {
+    var id = req.params.id;
+    Article.findByPk(id).then(article => {
+        if(article != undefined){
+
+            Category.findAll().then(categories => {
+
+                res.render("admin/articles/edit", {categories: categories, article: article});
+
+            })
+
+        }else {
+            res.redirect("/");
+        }
+
+    }).catch( err =>{
+        res.redirect("/")
+    })
 })
 
 module.exports = router
