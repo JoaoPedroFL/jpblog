@@ -88,5 +88,5 @@ app.get("/category/:slug", (req, res) => {
 })
 
 app.listen(3030, () => {
-    console.log("Servidor está rodando")
+    console.log("Servidor está rodando na porta 3030!")
 })
