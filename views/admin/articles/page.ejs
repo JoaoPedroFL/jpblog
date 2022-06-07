@@ -1,0 +1,38 @@
+<%- include('../../partials/header.ejs') %>
+<%- include('../../partials/homenavbar.ejs') %>
+<body>
+
+   <div class="container">
+
+      <% result.articles.rows.forEach(article => { %>
+
+         <h2 id="home_articles_titles"><%= article.title %></h2>
+         <a href="/<%= article.slug %>">
+            <button class="btn btn-success mt-2 mb-2">Ler artigo</button>
+         </a>   
+         <hr>
+     <%})%>
+
+     <div class="mt-5 mb-5 d-flex justify-content-between">
+        
+        <% if(result.page > 2) {%>
+        <a href="<%= result.page - 1 %>">
+           <button class="btn btn-primary">&#129144; Anterior</button>
+        </a> <% } else if(result.page == 2) { %>
+            <a href="/">
+                <button class="btn btn-primary">&#129144; Anterior</button>
+            <%}%>
+
+        <% if(result.next) {%>
+        <a href="<%= result.page + 1 %>">
+        <button class="btn btn-primary">Próximo &#129146;
+        </button>
+        </a> <%}%>
+       </div>
+
+   </div>
+
+</body>
+
+<%- include ('../../partials/footer.ejs') %>
+
