@@ -26,3 +26,32 @@ banco de dados, ou seja um CRUD completo, seguindo a arquitetura REST Api.</p>
 - [ ] Listagem de usuários
 - [ ] Autenticação
 - [ ] Estilo do Blog
+
+<br>
+
+<h1 align="center">
+    <img src="./github/Paginainicialepaginacao.gif">
+</h1>
+<h1 align="center">
+    <img src="./github/lerartigo.gif">
+</h1>
+<h1 align="center">
+    <img src="./github/exibircategorias.png">
+</h1>
+<h1 align="center">
+    <img src="./github/exibirartigos.png">
+</h1>
+<h1 align="center">
+    <img src="./github/categoriascrud.gif">
+</h1>
+<h1 align="center">
+    <img src="./github/artigoscrud.gif">
+</h1>
+<br>
+### Pré-requisistos
+<br>
+### Tecnologias
+
+---
+
+Made with :heart: by JOAOPEDROFL :hugs: [see my linkedin](https://www.linkedin.com/in/pedro-farias-79595b220/)
